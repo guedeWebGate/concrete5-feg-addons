@@ -1,22 +1,23 @@
-.f4cc-index-content a:hover {
+.facc-index-content a:hover {
     color: black;
     text-decoration: none;
 }
 
-.f4cc-index-content {
+.facc-index-content {
     margin-bottom: 20px;
-    padding: 0px 0px;
+    padding: 5px 0px;
 }
 
-.f4cc-index-content .row {
-    margin-top: 20px;
+.facc-index-content .row {
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
-.f4cc-index-content a {
+.facc-index-content a {
     color: black;
 }
 
-.f4cc-index-content .card {
+.facc-index-content .card {
     background-color: #FFFFFF;
     padding: 0;
     -webkit-border-radius: 4px;
@@ -25,22 +26,21 @@
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
-.f4cc-index-content .card:hover {
+.facc-index-content .card:hover {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
     color: black;
 }
 
-.f4cc-index-content .card img {
+.facc-index-content .card img {
     width: 100%;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    height: 172px;
     object-fit: cover;
-    object-position: center;
-    max-height: 80px;
 }
 
-.f4cc-index-content .card h4 {
-    margin-top: 20px;
+.facc-index-content .card h4 {
+    margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0px;
@@ -48,7 +48,7 @@
     min-height: 39px;
 }
 
-.f4cc-index-content .card p {
+.facc-index-content .card p {
     margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
@@ -57,13 +57,13 @@
     min-height: 84px;
 }
 
-.f4cc-index-content .blue-button {
+.facc-index-content .blue-button {
     width: 100px;
     -webkit-transition: background-color 1s, color 1s;
     /* For Safari 3.1 to 6.0 */
     transition: background-color 1s, color 1s;
     min-height: 20px;
-    background-color: #002E5B;
+    background-color: #9c1506;
     color: #ffffff;
     border-radius: 4px;
     text-align: center;
@@ -73,7 +73,7 @@
     display: inline-block;
 }
 
-.f4cc-index-content .blue-button:hover {
+.facc-index-content .blue-button:hover {
     background-color: #dadada;
     color: #002E5B;
 }

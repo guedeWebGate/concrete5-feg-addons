@@ -15,12 +15,12 @@ $defaultTumbnail = '<img src="'.$package_path.'images/feg_4c_block_banner.png">'
     <?php    if ($rssUrl): ?>
         <a href="<?php    echo $rssUrl ?>" target="_blank" class="ccm-block-page-list-rss-feed"><i class="fa fa-rss"></i></a>
     <?php    endif; ?>
-    <div class="ccm-block-page-list-pages f4cc-index-content">
+    <div class="ccm-block-page-list-pages f3cc-index-content">
         <div class="row">
         <?php        
             $ctr=1;
             foreach ($pages as $page):
-                if (($ctr-1) % 4 == 0 && $ctr>1) {
+                if (($ctr-1) % 3 == 0 && $ctr>1) {
                     echo( '</div><div class="row">');
                 }
                 // Prepare data for each page being listed...
@@ -52,19 +52,22 @@ $defaultTumbnail = '<img src="'.$package_path.'images/feg_4c_block_banner.png">'
                 }
                 $date = $dh->formatDateTime($page->getCollectionDatePublic(), true); 
                 ?>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="card">
                             <?php if (is_object($thumbnail)) {
                                     echo $tag;
                                 } else {
-                                    echo $defaultTumbnail;
+                                    if ($displayThumbnail) {
+                                        echo $defaultTumbnail;
+                                    } else {
+                                        echo ('<div class="spacer"></div>');
+                                    }
                                 }
                             ?>
-                            <h4><?php    echo $title ?></h4>
+                            <h4><a href="<?= $url;?>"><?= $title;?></a></h4>
                             <?php    if ($includeEntryText){ ?>
                                 <p> <?php    if ($includeDescription) echo $description; ?> </p>
                             <?php } ?>
-                            <a href="<?php    echo $url ?>" class="blue-button">Mehr</a>
                         </div>
                     </div>
                 <?php    $ctr++; ?> 
