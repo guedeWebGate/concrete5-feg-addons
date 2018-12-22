@@ -44,7 +44,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                 } 
                 if ("URL öffnen" == $newsTarget) {
                     if ($newsURL != "") {
-                        $buttonURL = $newURL;
+                        $buttonURL = $newsURL;
                     }
                 }
                 if ($displayThumbnail) {
